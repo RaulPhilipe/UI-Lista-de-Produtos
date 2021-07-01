@@ -6,9 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/TitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista de Produtos"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColor="#1E90FF"
+        android:textStyle="bold"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_below="@id/TitleView"/>
 
 </RelativeLayout>
